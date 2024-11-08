@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con varias etiquetas HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        section {
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Ejemplo de Página HTML</h1>
+    </header>
+
+    <section>
+        <h2>Formulario de Contacto</h2>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Información</h2>
+        <article>
+            <h3>¿Qué es HTML?</h3>
+            <p><mark>HTML</mark> es un lenguaje de marcado utilizado para la creación de páginas web. Su nombre significa <span class="highlight">HyperText Markup Language</span>.</p>
+        </article>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Video Ejemplo</h2>
+        <video width="600" controls>
+            <source src=https://www.youtube.com/watch?v10GHKjgQIR0.mp4 type="video/mp4">
+        </video>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Tabla de Datos</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>País</th>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>15</td>
+                <td>Rep.Dom</td>
+            </tr>
+            <tr>
+                <td>Jerry</td>
+                <td>98</td>
+                <td>Haiti</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Menú de Navegación</h2>
+        <menu>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </menu>
+    </section>
+</div>
+
+</body>
+</html
